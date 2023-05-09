@@ -52,13 +52,12 @@ export class UsersService {
     return this.userRepository.save(user);
   }
 
-  async remove(userId: number): Promise<User> {
+async remove(userId: number): Promise<User> {
     const user = await this.findOne(userId);
-    const deletedUser = await this.userRepository.remove(user);
     await this.userRepository.remove(user);
     return {
-      userId: deletedUser.userId,
-      nohp: deletedUser.nohp,
+      userId: userId,
+      nohp: user.nohp,
       username: '',
       email: '',
       password: '',
