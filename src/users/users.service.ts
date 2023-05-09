@@ -57,7 +57,7 @@ export class UsersService {
     const deletedUser = await this.userRepository.remove(user);
     await this.userRepository.remove(user);
     return {
-      userId: userId,
+      userId: deletedUser.userId,
       nohp: deletedUser.nohp,
       username: '',
       email: '',

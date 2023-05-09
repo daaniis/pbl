@@ -22,7 +22,7 @@ import { User } from './users/entities/user.entity';
       host: 'db.sicqgzzryxmgkprwetud.supabase.co',
       port: 5432,
       username: 'postgres',
-      password: 'AxwpkpW6QiwAaIHi',
+      password: 'xDKJGdZ7PXBRwPWF',
       database: 'postgres',
       entities: [User],
       synchronize: true,

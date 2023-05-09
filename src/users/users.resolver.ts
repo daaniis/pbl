@@ -28,8 +28,8 @@ export class UsersResolver {
     return this.usersService.update(updateUserInput.userId, updateUserInput);
   }
 
-  @Mutation(() => User)
-  removeUser(@Args('userId', { type: () => String }) userId: number) {
-    return this.usersService.remove(userId);
-  }
+  // @Mutation(() => User)
+  // removeUser(@Args('userId', { type: () => String }) userId: number) {
+  //   return this.usersService.remove(userId);
+  // }
 }

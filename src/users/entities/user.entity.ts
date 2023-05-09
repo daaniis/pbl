@@ -7,6 +7,7 @@ import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 export class User {
   @PrimaryGeneratedColumn()
   @Field(() => Int)
+  @IsNotEmpty()
   userId: number;
 
   @Column()
